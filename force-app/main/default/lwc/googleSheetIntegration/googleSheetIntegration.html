@@ -1,0 +1,12 @@
+<template>
+    <div class="slds-m-top_small slds-m-bottom_medium">
+         <!-- Success variant: Identifies a successful action -->
+         <lightning-button variant="success" label="Success" title="Successful action" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+    </div>
+    <div class="slds-m-vertical_medium">
+        <p>The label of the button that was clicked is: <span class="slds-text-heading_small">{clickedButtonLabel}</span></p>
+    </div>
+    <div class="slds-p-around_small">
+        Current Record ID in Lightning Web Component: <strong>{recordId}</strong> <br/><br/>
+    </div>
+</template> 

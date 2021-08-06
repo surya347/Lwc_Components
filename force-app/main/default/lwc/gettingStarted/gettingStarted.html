@@ -1,0 +1,50 @@
+<template>
+    <lightning-card>
+        <lightning-tabset variant="scoped">
+            <lightning-tab label="TOOL GUIDELINES">
+                <P><b>Salesforce DevOps Solution Process -</b><br>
+                </P>
+
+                <ul class="slds-list_dotted">
+                    <li>Org Manual Setup.</li>  
+                    <li>Git Repository Setup.</li>
+                    <li>Pipeline Setup.</li>
+                    <li>Jenkins Setup.</li>
+                    <li>Agile Planning.</li>
+                    <li>Development in Orgs.</li>
+                    <li>Deployment on GitHub and respective Orgs.</li>
+                    <li>Promotion in Higher Orgs.</li>
+                </ul>
+                <img src={backgroundImage} />
+            </lightning-tab>
+            <lightning-tab label="ORG CREDENTIALS">
+                <div>
+                    <c-org-credentials></c-org-credentials>
+                </div>
+                <img src={backgroundImage} />
+            </lightning-tab>
+            <!-- <lightning-tab label="ACCOUNT SUMMARY">
+                ACCOUNT SUMMARY Content !
+                <img src={backgroundImage} />
+            </lightning-tab> -->
+            <lightning-tab label="GIT">
+                <div>
+                    <c-get-git-repositories></c-get-git-repositories>
+                </div>
+                <img src={backgroundImage} />
+            </lightning-tab>
+            <lightning-tab label="PIPELINE">
+                <div>
+                    <c-get-pipelines></c-get-pipelines>
+                </div>
+                <img src={backgroundImage} />
+            </lightning-tab>
+            <lightning-tab label="IMPORT DATA">
+                <div>
+                    <c-import-agile-data></c-import-agile-data>
+                </div>
+                <img src={backgroundImage} />
+            </lightning-tab>
+        </lightning-tabset>
+    </lightning-card>
+</template>
